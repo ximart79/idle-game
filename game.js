@@ -12,3 +12,4 @@ function btnPress() {
   postToPage(score);
 }
 
+createButton('Button', btnPress); 
