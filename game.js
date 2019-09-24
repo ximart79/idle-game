@@ -14,12 +14,14 @@
 
 var score = 0; // Create a variable to store the score in
 var coins = 0; // Create a variable to store the score in
+
+
 var title = new Title('Welcome to the Game'); // Create a title element
 var button = new Button('eyeballs', btnPress);         // Create a button element
 var scr = new Text(score);        
-var coins = new Text(score);              // Create a text element
+var coinButton = new Text(coins);              // Create a text element
 var button1 = new Button('coins', btnPress2);
-
+var column2 = new Section('col');    // Create the second column
 
 function btnPress() {
   score++;         // Increase the score
@@ -33,7 +35,7 @@ function btnPress() {
 }
 
 function btnPress2() {
-  score++;         // decrease the score  
-  coins.edit(score); // Update the page with the new score
+  coins++;         // decrease the score  
+  coinButton.edit(coins); // Update the page with the new score
 }
 
