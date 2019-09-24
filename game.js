@@ -21,7 +21,17 @@ var button = new Button('eyeballs', btnPress);         // Create a button elemen
 var scr = new Text(score);        
 var coinButton = new Text(coins);              // Create a text element
 var button1 = new Button('coins', btnPress2);
+var text1 = new Text('I will go in column 1');  // Create some text to go in the columns
+var text2 = new Text('I will go in column 2');
+var rowSection = new Section('row'); // Create the row to store the columns in
+var column1 = new Section('col');    // Create the first column
 var column2 = new Section('col');    // Create the second column
+
+rowSection.add(column1);
+rowSection.add(column2);
+
+column1.add(text1);
+column2.add(text2);
 
 function btnPress() {
   score++;
