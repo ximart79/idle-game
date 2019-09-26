@@ -26,12 +26,14 @@ var text2 = new Text('I will go in column 2');
 var rowSection = new Section('row'); // Create the row to store the columns in
 var column1 = new Section('col');    // Create the first column
 var column2 = new Section('col');    // Create the second column
-colum2 =
+var gun = new Button('pistol', btnPress);
 rowSection.add(column1);
 rowSection.add(column2);
 
 column1.add(text1);
+
 column2.add(text2);
+column2.add(gun)
 
 function btnPress() {
   score++;
